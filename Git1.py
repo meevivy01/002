@@ -97,7 +97,7 @@ if os.path.exists(CLIENTS_PATH):
 TARGET_UNIVERSITIES = ["นเรศวร", "มหาลัยนเรศวร" , "Naresuan University"]  
 TARGET_FACULTIES = ["เครื่องสำอาง","Cosmetic Science"] 
 TARGET_MAJORS = ["เครื่องสำอาง", "วิทยาศาสตร์เครื่องสำอาง","Cosmetic Science", "Cosmetics", "Cosmetic"]
-SEARCH_KEYWORDS = ["นเรศวร เครื่องสำอาง","Cosmetic Naresuan"]
+SEARCH_KEYWORDS = ["นเรศวร เครื่องสำอาง"]
 
 
 KEYWORDS_CONFIG = {
