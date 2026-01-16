@@ -337,6 +337,12 @@ class JobThaiRowScraper:
             return ""
         except: return ""
 
+    # ==============================================================================
+    # 🔥 STEP 1: LOGIN (Dynamic URL Handling)
+    # ==============================================================================
+    # ==============================================================================
+    # 🔥 STEP 1: LOGIN (URL Reconstruction Mode - สร้าง URL ใหม่เอง)
+    # ==============================================================================
     def step1_login(self):
         # 1. เริ่มจากลิงก์สั้น
         entry_point = "https://www.jobthai.com/login?page=resumes&l=th"
@@ -692,7 +698,6 @@ class JobThaiRowScraper:
 
             console.print("🚫 หมดความพยายาม -> ใช้ Cookie สำรอง", style="bold red")
             return self.login_with_cookie()
-
         
     def login_with_cookie(self):
         cookies_env = os.getenv("COOKIES_JSON")
