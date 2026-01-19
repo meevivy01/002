@@ -1669,7 +1669,7 @@ class JobThaiRowScraper:
                                             # 🟢 [เพิ่ม] 4. บันทึกประวัติลง Google Sheet ทันที (เคส HOT)
                                             self.update_history_sheet(person_data['id'], str(today))
 
-                                    if days_diff > 30 and (is_friday or is_manual_run):
+                                    if days_diff > 30 and (is_friday or is_manual_run) and ENABLE_BATCH_EMAIL:
                                          if current_keyword_batch:
                                               progress.console.print(f"\n[bold green]📨 เจอคนเก่า ({days_diff} วัน) -> ถึงรอบส่งเมลสรุป ({len(current_keyword_batch)} คน)![/]")
                                               self.send_batch_email(current_keyword_batch, keyword)
